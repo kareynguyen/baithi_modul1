@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    function isFibonacci(x) {
+        let fibonacci = [];
+        let f0 = 0;
+        let f1 = 0;
+        let f2 = 1;
+        let check = false;
+        for (let i = 1; f2 <= x; i++) {
+            fibonacci.push(f2);
+            f0 = f1;
+            f1 = f2;
+            f2 = f0 + f1;
+        }
+        if (fibonacci[fibonacci.length - 1] == x) {
+            check = true;
+        }
+        return check;
+    }
+    console.log(isFibonacci(8))
+</script>
